@@ -18,7 +18,7 @@ public class MiPrimerClase {
 		bot.get("http://www.google.com"); //Linea para abrir el URL indicado (google)
 		
 		bot.findElement(By.name("q")).sendKeys("Suso"); //Para ubicar la barra de texto por Name, y le enviamos un texto mediante sendKeys para buscar
-		
+		//Hola mundo
 	}
 
 }

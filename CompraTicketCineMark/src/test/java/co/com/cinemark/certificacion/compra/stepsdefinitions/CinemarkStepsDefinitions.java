@@ -1,9 +1,13 @@
 package co.com.cinemark.certificacion.compra.stepsdefinitions;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.CoreMatchers.equalTo;
+
 import org.openqa.selenium.WebDriver;
 
 import co.com.cinemark.certificacion.compra.userinterfaces.CinemarkHomePage;
 import co.com.cinemark.certificacion.compra.tasks.Comprar;
+import co.com.cinemark.certificacion.compra.questions.TheResult;
 import co.com.cinemark.certificacion.compra.tasks.Buscar;
 import co.com.cinemark.certificacion.compra.tasks.OpenTheBrowser;
 import cucumber.api.java.Before;
@@ -40,6 +44,7 @@ public class CinemarkStepsDefinitions {
 	@Then("^Compro boletos para la pelicula$")
 	public void compro_boletos_para_la_pelicula() {
 		malory.attemptsTo(Comprar.Boletos());
+		malory.should(seeThat(TheResult.is(), equalTo("UNA ENTREVISTA CON DIOS(2D SUB)")));
 	}
 
 

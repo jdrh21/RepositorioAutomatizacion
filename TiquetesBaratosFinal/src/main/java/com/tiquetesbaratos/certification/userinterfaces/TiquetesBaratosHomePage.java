@@ -1,5 +1,7 @@
 package com.tiquetesbaratos.certification.userinterfaces;
 
+//En esta clase establecemos la URL que deseamos usar para los test
+
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
 

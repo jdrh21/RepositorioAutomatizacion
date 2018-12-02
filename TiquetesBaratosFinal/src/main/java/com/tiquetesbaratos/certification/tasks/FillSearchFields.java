@@ -1,6 +1,7 @@
 package com.tiquetesbaratos.certification.tasks;
 
-//Clase de tipo tarea encargada de llenar los campos del formulario buscar vuelos
+//Clase de tipo tarea encargada de llenar los campos del formulario buscar vuelos y procede a oprimir el boton buscar
+
 
 //Libreria para instanciar objetos de la clase Task
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -30,12 +31,12 @@ public class FillSearchFields implements Task{
 	public <T extends Actor> void performAs(T actor) {
 		//Metodo mediante el cual el actor llena el formulario de busqueda de vuelo
 		actor.attemptsTo(
-		WaitUntil.the(TiquetesBaratosComponents.ALERTA, WebElementStateMatchers.isVisible()),
-		Click.on(TiquetesBaratosComponents.CANCELAR_ALERTA),
-		Enter.theValue("Medellin - Colombia(MDE)").into(TiquetesBaratosComponents.ORIGEN_FIELD),
-		Click.on(TiquetesBaratosComponents.ORIGEN),
-		Enter.theValue("Bogota - Colombia (BOG)").into(TiquetesBaratosComponents.DESTINO_FIELD),
-		Click.on(TiquetesBaratosComponents.DESTINO),
+		WaitUntil.the(TiquetesBaratosComponents.ALERT, WebElementStateMatchers.isVisible()),
+		Click.on(TiquetesBaratosComponents.CANCEL_ALERT),
+		Enter.theValue("Medellin - Colombia(MDE)").into(TiquetesBaratosComponents.FROM_FIELD),
+		Click.on(TiquetesBaratosComponents.FROM),
+		Enter.theValue("Bogota - Colombia (BOG)").into(TiquetesBaratosComponents.TO_FIELD),
+		Click.on(TiquetesBaratosComponents.TO),
 		Click.on(TiquetesBaratosComponents.DATE1_FIELD),
 		Click.on(TiquetesBaratosComponents.DATE1),
 		Click.on(TiquetesBaratosComponents.DATE2_FIELD),

@@ -1,6 +1,6 @@
 package com.tiquetesbaratos.certification.runners;
 
-//Mediante esta clase se ejecuta el test de buscar vuelos
+/*Mediante esta clase se ejecuta el test de buscar vuelos*/
 
 
 //Libreria para implementar el metodo RunWith que permite ejecutar los test

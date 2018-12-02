@@ -1,7 +1,7 @@
 package com.tiquetesbaratos.certification.questions;
 
 //Clase que retorna un booleano dependiendo si un elemento es visible para el actor
-
+//Confirma que la búsqueda de los vuelos se realizó
 
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 import com.tiquetesbaratos.certification.userinterfaces.TiquetesBaratosSelectFlightPage;
@@ -16,7 +16,7 @@ public class SearchFlightResult implements Question<Boolean>{
 	public Boolean answeredBy(Actor actor) {
 		
 		//Retorna un true si el elemento BOTON_RESERVAR es visible para el actor
-		 return the(TiquetesBaratosSelectFlightPage.BOTON_RESERVAR).answeredBy(actor).isCurrentlyVisible();
+		 return the(TiquetesBaratosSelectFlightPage.RESERV_BUTTON).answeredBy(actor).isCurrentlyVisible();
 	}
 
 	//Constructor de la clase	

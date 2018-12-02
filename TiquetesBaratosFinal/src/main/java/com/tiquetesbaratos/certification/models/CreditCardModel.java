@@ -1,6 +1,6 @@
 package com.tiquetesbaratos.certification.models;
 
-//Clase que contiene plantilla para los datos de tarjeta de credito
+//Clase que contiene una plantilla para los datos de tarjeta de credito
 
 public class CreditCardModel {
 	

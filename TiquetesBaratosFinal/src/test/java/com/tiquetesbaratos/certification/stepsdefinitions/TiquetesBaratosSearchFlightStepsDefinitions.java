@@ -1,5 +1,8 @@
 package com.tiquetesbaratos.certification.stepsdefinitions;
 
+//Clase que contiene la lista de pasos que realizara el actor para llenar el formulario de buscar vuelo y seleccionarlos
+
+
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import org.openqa.selenium.WebDriver;
 import com.tiquetesbaratos.certification.userinterfaces.TiquetesBaratosHomePage;
@@ -23,7 +26,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-//Clase que contiene la lista de pasos que realizara el actor para llenar el formulario de buscar vuelo
 
 public class TiquetesBaratosSearchFlightStepsDefinitions {
 	

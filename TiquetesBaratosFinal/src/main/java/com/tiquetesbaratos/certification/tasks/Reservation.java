@@ -1,6 +1,6 @@
 package com.tiquetesbaratos.certification.tasks;
 
-//Clase de tipo tarea encargada de ingresar los datos del cliente para realizar la reserva
+//Clase de tipo tarea encargada de ingresar los datos del cliente para realizar la reserva y elegir el medio de pago
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import com.tiquetesbaratos.certification.models.ReservationModel;
@@ -31,20 +31,20 @@ public class Reservation implements Task{
 				
 				//El actor llena el formulario de reserva de vuelo con datos del cliente
 				
-				Enter.theValue(reservationModel.getPrimerNombre()).into(TiquetesBaratosReservationPage.PRIMER_NOMBRE),
-				Enter.theValue(reservationModel.getPrimerApellido()).into(TiquetesBaratosReservationPage.PRIMER_APELLIDO),
-				Click.on(TiquetesBaratosReservationPage.CAMPO_DIA),
-				Click.on(TiquetesBaratosReservationPage.DIA),
-				Click.on(TiquetesBaratosReservationPage.CAMPO_MES),
-				Click.on(TiquetesBaratosReservationPage.MES),
-				Click.on(TiquetesBaratosReservationPage.CAMPO_ANO),
-				Click.on(TiquetesBaratosReservationPage.ANO),
-				Enter.theValue(reservationModel.getCedula()).into(TiquetesBaratosReservationPage.CEDULA),
-		        Enter.theValue(reservationModel.getTelefono()).into(TiquetesBaratosReservationPage.TELEFONO),
-		        Enter.theValue(reservationModel.getCelular()).into(TiquetesBaratosReservationPage.CELULAR),
-		        Enter.theValue(reservationModel.getCorreo1()).into(TiquetesBaratosReservationPage.CORREO),
-                Enter.theValue(reservationModel.getCorreo2()).into(TiquetesBaratosReservationPage.CORREO1),
-                Click.on(TiquetesBaratosReservationPage.BOTON_RESERVAR),
+				Enter.theValue(reservationModel.getPrimerNombre()).into(TiquetesBaratosReservationPage.FIRST_NAME),
+				Enter.theValue(reservationModel.getPrimerApellido()).into(TiquetesBaratosReservationPage.LAST_NAME),
+				Click.on(TiquetesBaratosReservationPage.DAY_FIELD),
+				Click.on(TiquetesBaratosReservationPage.DAY),
+				Click.on(TiquetesBaratosReservationPage.MONTH_FIELD),
+				Click.on(TiquetesBaratosReservationPage.MONTH),
+				Click.on(TiquetesBaratosReservationPage.YEAR_FIELD),
+				Click.on(TiquetesBaratosReservationPage.YEAR),
+				Enter.theValue(reservationModel.getCedula()).into(TiquetesBaratosReservationPage.ID),
+		        Enter.theValue(reservationModel.getTelefono()).into(TiquetesBaratosReservationPage.PHONE),
+		        Enter.theValue(reservationModel.getCelular()).into(TiquetesBaratosReservationPage.CELLPHONE),
+		        Enter.theValue(reservationModel.getCorreo1()).into(TiquetesBaratosReservationPage.MAIL),
+                Enter.theValue(reservationModel.getCorreo2()).into(TiquetesBaratosReservationPage.MAIL1),
+                Click.on(TiquetesBaratosReservationPage.RESERV_BUTTON),
                 WaitUntil.the(TiquetesBaratosPayFlightPage.VISA, WebElementStateMatchers.isVisible()),
     			Click.on(TiquetesBaratosPayFlightPage.VISA));
 	}

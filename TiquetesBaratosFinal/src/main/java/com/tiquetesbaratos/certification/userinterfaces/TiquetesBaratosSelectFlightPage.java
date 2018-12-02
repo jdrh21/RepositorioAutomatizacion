@@ -9,8 +9,8 @@ import net.serenitybdd.screenplay.targets.Target;
 public class TiquetesBaratosSelectFlightPage {
 	
 	
-	public static final Target VUELO_IDA = Target.the("Vuelo de ida").located(By.id("vueloFC3"));
-    public static final Target VUELO_REGRESO = Target.the("Vuelo de regreso").located(By.id("vuelo2FC3"));
-    public static final Target BOTON_RESERVAR = Target.the("Boton reservar").located(By.xpath("//*[@id=\"caja_flotante\"]/table/tbody/tr[2]/td/table/tbody/tr/td/div"));
+	public static final Target OUTBOUND_FLIGHT = Target.the("Vuelo de ida").located(By.name("vuelo"));
+    public static final Target RETURN_FLIGHT = Target.the("Vuelo de regreso").located(By.name("vuelo2"));
+    public static final Target RESERV_BUTTON = Target.the("Boton reservar").located(By.xpath("//*[@id=\"caja_flotante\"]/table/tbody/tr[2]/td/table/tbody/tr/td/div"));
 
 }

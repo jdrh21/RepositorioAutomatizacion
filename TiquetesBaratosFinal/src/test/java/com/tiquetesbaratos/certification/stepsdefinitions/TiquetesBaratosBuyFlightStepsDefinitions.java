@@ -1,5 +1,8 @@
 package com.tiquetesbaratos.certification.stepsdefinitions;
 
+//Clase que contiene la lista de pasos que realizara el actor para confirmar la compra del vuelo
+
+
 import static com.tiquetesbaratos.certification.exceptions.NoFlightBuy.getNoFlightBuyMessage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import java.util.List;

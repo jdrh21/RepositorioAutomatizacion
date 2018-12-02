@@ -1,5 +1,8 @@
 package com.tiquetesbaratos.certification.questions;
 
+//Clase que retorna un booleano dependiendo si un elemento es visible para el actor
+//Confirma que se abrio la pagina principal, con el fin de verificar si hay red
+
 import static net.serenitybdd.screenplay.questions.WebElementQuestion.the;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

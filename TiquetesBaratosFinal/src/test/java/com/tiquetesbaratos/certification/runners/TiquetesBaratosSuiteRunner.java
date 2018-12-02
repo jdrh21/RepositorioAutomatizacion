@@ -1,5 +1,8 @@
 package com.tiquetesbaratos.certification.runners;
 
+/*Mediante esta clase se ejecutan los test de buscar vuelo, reservar vuelo y comprar vuelo*/
+
+
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;

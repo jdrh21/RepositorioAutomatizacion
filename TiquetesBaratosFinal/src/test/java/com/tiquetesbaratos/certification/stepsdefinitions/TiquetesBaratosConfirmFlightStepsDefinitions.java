@@ -1,5 +1,8 @@
 package com.tiquetesbaratos.certification.stepsdefinitions;
 
+//Clase que contiene la lista de pasos que realizara el actor para confirmar la reserva del vuelo
+
+
 import static com.tiquetesbaratos.certification.exceptions.NoFlightReserved.getNoFlightReservedMessage;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
@@ -18,7 +21,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-//Clase que contiene la lista de pasos que realizara el actor para confirmar la reserva del vuelo
 
 public class TiquetesBaratosConfirmFlightStepsDefinitions {
 	@Managed(driver = "chrome") //Le indicamos al WebDriver que use el de chrome

@@ -1,8 +1,10 @@
 package com.tiquetesbaratos.certification.tasks;
 
-//Clase de tipo tarea encargada de seleccionar los vuelos de ida y de regreso
+//Clase de tipo tarea encargada de seleccionar los vuelos de ida y de regreso de manera aleatoria
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import com.tiquetesbaratos.certification.interactions.SelectAFlight;
 import com.tiquetesbaratos.certification.userinterfaces.TiquetesBaratosSelectFlightPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -17,12 +19,12 @@ public class SelectFlight implements Task{
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(
 				
-				//El actor selecciona un vuelo de ida y uno de regreso a partir de la busqueda realizada
-				Scroll.to(TiquetesBaratosSelectFlightPage.VUELO_IDA),
-				Click.on(TiquetesBaratosSelectFlightPage.VUELO_IDA),
-				Scroll.to(TiquetesBaratosSelectFlightPage.VUELO_REGRESO),
-				Click.on(TiquetesBaratosSelectFlightPage.VUELO_REGRESO),
-				Click.on(TiquetesBaratosSelectFlightPage.BOTON_RESERVAR));
+				//El actor selecciona un vuelo de ida y uno de regreso de manera aleatoria a partir de la busqueda realizada
+				Scroll.to(TiquetesBaratosSelectFlightPage.OUTBOUND_FLIGHT),
+				SelectAFlight.random(TiquetesBaratosSelectFlightPage.OUTBOUND_FLIGHT),
+				Scroll.to(TiquetesBaratosSelectFlightPage.RETURN_FLIGHT),
+				SelectAFlight.random(TiquetesBaratosSelectFlightPage.RETURN_FLIGHT),
+				Click.on(TiquetesBaratosSelectFlightPage.RESERV_BUTTON));
 	}
 	
 	public static SelectFlight select() {

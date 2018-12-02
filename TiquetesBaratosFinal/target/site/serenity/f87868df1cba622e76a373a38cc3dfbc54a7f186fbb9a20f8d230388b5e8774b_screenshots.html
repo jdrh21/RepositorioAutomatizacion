@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Proyecto final TIQUETESBARATOS.COM  </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f8091eede0cf4703c045883081eb051cf0248165f94acbe3e64e7973b8f5b97d.html">Buy A Fligth</a></span>
+                > <span class="truncate-60"><a
+                    href="f87868df1cba622e76a373a38cc3dfbc54a7f186fbb9a20f8d230388b5e8774b.html">buy the fligth reserved </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-12-2018 14:37</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Buy A Fligth </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a web user<br />
+I want to use tiquetesbaratos.com<br />
+To buy a flight
+                                </div>
+                            </div>
+
+                            <div class="requirementNarrative">Background: susan search and reserv a flight
+                                    <p></p>
+                            </div>
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">buy the fligth reserved
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="99a9e91599ba13daa8c227511f36a563c87f822e9fd09afeb5f4239f908e6fe7.png" title="Given that susan is in tiquetes baratos home page" width="1366"/>
+                <img src="99a9e91599ba13daa8c227511f36a563c87f822e9fd09afeb5f4239f908e6fe7.png" title="that Susan is in tiquetes baratos home page" width="1366"/>
+                <img src="1b6d1e4bdd6f38928bad022fb2dc1a406152004d97ef119fd29430c8b3036ab9.png" title="Susan opens the Tiquetes baratos home page" width="1366"/>
+                <img src="57e1432c311575b1af30b89887ca24bce21a5c39681f80e74d8276543b7369b8.png" title="Then tiquetes baratos page visible" width="1366"/>
+                <img src="cc4e1acee752d4f876eb698d1f6d0716ea5a8c8d536d5e6527d1046c16971b4a.png" title="When she fill all the fields" width="1366"/>
+                <img src="9d183efb58f182f32785174cd1c77420f56cb00a7eaf08c4ac219e67bdc0b3f6.png" title="Susan fill all the fields" width="1366"/>
+                <img src="8cca33f262fc142d11d1a3bddaca7512c3fa8be80ea9507de651cb9a8de54c06.png" title="Susan clicks on cancelar Alerta de notificaciones" width="1366"/>
+                <img src="d355bdba364ff7dabc50f5e4683071aacbf56652035f164a03961b7f01fd9ae2.png" title="Susan enters 'Medellin - Colombia(MDE)' into Campo origen de vuelo" width="1366"/>
+                <img src="f8795ba2a4b05bcf1864229ac11efb54544184b28362ab8f22ae6af877822cae.png" title="Susan clicks on Elemento de la lista origen de vuelo" width="1366"/>
+                <img src="691255df70973b48b86d5256fbf2804caad48a6836cec789b50b653fca9af7dd.png" title="Susan enters 'Bogota - Colombia (BOG)' into Campo destino de vuelo" width="1366"/>
+                <img src="33e33d310bb03adfc8a8e7e8c90759d231bb33e3471696bbe65afff963bd230c.png" title="Susan clicks on Elemento de la lista destino de vuelo" width="1366"/>
+                <img src="3bbd56472a64ef48df761ea8c23b60e0c15609aafe3a4b7155993437746d066e.png" title="Susan clicks on Campo fecha vuelo de ida" width="1366"/>
+                <img src="93e00a793b2b24ecd5b309f5100f90d2da3259a0bfa118facf3497bf431e6059.png" title="Susan clicks on Elemento del calendario fecha ida enero23" width="1366"/>
+                <img src="93e00a793b2b24ecd5b309f5100f90d2da3259a0bfa118facf3497bf431e6059.png" title="Susan clicks on Campo fecha vuelo de regreso" width="1366"/>
+                <img src="16cf976d5db37fd003f478a189dcda0d207665217686414fea1094dabc076550.png" title="Susan clicks on Elemento del calendario fecha regreso feb21" width="1366"/>
+                <img src="59ec36a04c46c61ee39c7c00b24fda13ba8c782b4cb8cc9b00ace0f8449a3ffa.png" title="Susan clicks on Bot&oacute;n buscar" width="1366"/>
+                <img src="8a06c34379c5c751d0548f678acaab8f4ef6e8e2b29ef7b68a27caddf459e30f.png" title="Then she should see the available flights" width="1366"/>
+                <img src="5a688504b35533214921f247017c553f303ead034f2e93c451ee207df067d7bd.png" title="Then search flight result" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="When she select a flight" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="Susan select a flight" width="1366"/>
+                <img src="4a71c943c01ccc1174f7fbba4d76a47653af85e40f6bc80f14101b7aaf76769f.png" title="Susan clicks on Vuelo de ida" width="1366"/>
+                <img src="9b5e675789056e2a68639288b8d5f72834b52efa7288d7472395015806e6d935.png" title="Susan clicks on Vuelo de regreso" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="Susan clicks on Boton reservar" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="Then she should see the confirm flight page" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="Then select flight result" width="1366"/>
+                <img src="6acbf0b324dcf454c33290eb4399fea660eb09c0cf9da7eb2798a5a7b129be65.png" title="Given that susan is in tiquetes baratos confirm flight page" width="1366"/>
+                <img src="37681499991343394002f5f34b17d87b04f0a9d9bbe37e2d46da55610e918f20.png" title="When she fill all the form fields
+| primerNombre | primerApellido | cedula | telefono | celular | correo1 | correo2 |
+| Daniel | Hernandez | 32423452 | 3433434 | 311988439 | adffdfe@eife.co | eradse@fkdo.co |" width="1366"/>
+                <img src="40b027b4b7f53c77d33a7e5976305eb0b1f82cec8fe1a9bf3fdd28bdc6d02533.png" title="Susan fill all the form fields" width="1366"/>
+                <img src="b305fe9a07ce92d5e25ebdac7b84ea1e6e7518f6021d01e5aa1d8a731e255864.png" title="Susan enters 'Daniel' into Primer nombre" width="1366"/>
+                <img src="3e8c15a41210da67a7f5a8257118fcab30817a502ef9d78aabef3b06c5aa256c.png" title="Susan enters 'Hernandez' into Primer apellido" width="1366"/>
+                <img src="f88739983426d26ee6296269480b2166022fa24114d30b3e1ce855de1e9cada7.png" title="Susan clicks on Campo Dia" width="1366"/>
+                <img src="1f9436ef9069bace5b5b4127aed551770c922dc158f0c2aea12e0b2aa9662b05.png" title="Susan clicks on Dia" width="1366"/>
+                <img src="17c29882238bb1b38ffa292e37f0efc1f58b85d214740e52c3d718ac9dab13e2.png" title="Susan clicks on Campo Mes" width="1366"/>
+                <img src="d12050cb0561330faf8283c7547ead039e72dd11f6b41516418bb2ca882659d3.png" title="Susan clicks on Mes" width="1366"/>
+                <img src="df6c75299069e9272e2a13d29bfad2290a41641da51b4aa83ce7a9e5555e9165.png" title="Susan clicks on Campo A&ntilde;o" width="1366"/>
+                <img src="d0052b9225d9cc0afb0c0096877f3fe4825b80ea0498d2c918542c96989d6e98.png" title="Susan clicks on A&ntilde;o" width="1366"/>
+                <img src="3640144ec1d999a9b8940820a2a938020d65bb80681d9cd176ecbcb123111cab.png" title="Susan enters '32423452' into Cedula" width="1366"/>
+                <img src="7aa8f90340697fd1fae4d9bb9b2729cb8a96cedba4f0b1abc485a0ad9f7e763c.png" title="Susan enters '3433434' into Telefono" width="1366"/>
+                <img src="dbf6081e41646486950a351a4528833f27c891de7301aa80a97f70c75cc623c5.png" title="Susan enters '311988439' into Celular" width="1366"/>
+                <img src="6f96114e3b762c2cf4c124d85daf1afbab797bbd9e553ac1e0d6aadc3b46cf1b.png" title="Susan enters 'adffdfe@eife.co' into Primer correo" width="1366"/>
+                <img src="6fd26c264be45c8dc43cd73cb3551c3f8af765917dd1835d61243bd1ff4ae2e4.png" title="Susan enters 'eradse@fkdo.co' into Segundo correo" width="1366"/>
+                <img src="7b42f8aaf6a07037251ccfa65ddf18f14abfe4e0af2b7bb69051d80be9754c96.png" title="Susan clicks on Bot&oacute;n reservar" width="1366"/>
+                <img src="40b027b4b7f53c77d33a7e5976305eb0b1f82cec8fe1a9bf3fdd28bdc6d02533.png" title="Susan clicks on Medio de pago visa" width="1366"/>
+                <img src="40b027b4b7f53c77d33a7e5976305eb0b1f82cec8fe1a9bf3fdd28bdc6d02533.png" title="Then she should see the payment page" width="1366"/>
+                <img src="37681499991343394002f5f34b17d87b04f0a9d9bbe37e2d46da55610e918f20.png" title="Then reserv flight result" width="1366"/>
+                <img src="37681499991343394002f5f34b17d87b04f0a9d9bbe37e2d46da55610e918f20.png" title="Given that susan select the payment form" width="1366"/>
+                <img src="4447482435a983b950bf51ffd384342bfc4ecb2e8fabac16b406b1c3e2789d9f.png" title="When she fill all the pay form fields
+| Nombre | Apellido | nroTarjeta | digSeguridad | cedula | direccion | ciudad | correo | telefono |
+| Daniel | Hernandez | 4532342271634585 | 424 | 1044793847 | calle 10 | Medellin | dsffdfer@fkdo.co | 3119348372 |" width="1366"/>
+                <img src="4447482435a983b950bf51ffd384342bfc4ecb2e8fabac16b406b1c3e2789d9f.png" title="Susan fill all the pay form fields" width="1366"/>
+                <img src="f2ecc15c38657835eaf409c7ba9ab3d4b9a2e97b064cdfb2c3dd20e1d98ba5d0.png" title="Susan enters 'Daniel' into nombre" width="1366"/>
+                <img src="def9fd48d1b04ebc4861444c43ff5814eba3dbb6266adb679a03bed95a1fa334.png" title="Susan enters 'Hernandez' into apellido" width="1366"/>
+                <img src="212ce5e27fe294fcef93273f5f1f6267a4e6eafb7dc990eb2623296f245ad425.png" title="Susan enters '4532342271634585' into Numero de tarjeta" width="1366"/>
+                <img src="4ab34198a3d0789e4b735aaf2193e7ff312f1055fc4d2b51dc9814fbdc093034.png" title="Susan clicks on Campo cuotas tarjeta" width="1366"/>
+                <img src="0c88031849ee6df5430caa52c777f6528e609ae86e842bf20aee09667d6d2066.png" title="Susan clicks on valor cuotas" width="1366"/>
+                <img src="492b9aa8d3922dd14c263646f3076e227bf62bf4457579b1baafcd19a5c5eb17.png" title="Susan clicks on Campo Mes vencimiento" width="1366"/>
+                <img src="24447243b7e14c4c489ef8b8bda9dc469c14608ae5f4e5613178d45bed5e129c.png" title="Susan clicks on valor mes vencimiento" width="1366"/>
+                <img src="c00edee4ad24637d2c70b529215aea9e31c3e12cb4c9bc628ad0bb6c8aea4b31.png" title="Susan clicks on Campo a&ntilde;o vencimiento" width="1366"/>
+                <img src="e11232f5df5500c0da9dc52f70b9181c4135a25f082e4559a96450e767149a75.png" title="Susan clicks on Valor a&ntilde;o vencimiento" width="1366"/>
+                <img src="d462305ecc1454fadaa48a9d213515042e7c6dc8f0caf00d86798f3b096e3c0e.png" title="Susan enters '424' into Digitos de seguridad" width="1366"/>
+                <img src="873adad39f9246d3fb2bd444a4fd1c2556c798486e3566a8fb52728ea686834b.png" title="Susan clicks on Tipo de documento" width="1366"/>
+                <img src="c661fe59a4cabc9a52c51308a84ed6f5f7402eb669926dd2c217449985e7e8ee.png" title="Susan clicks on Documento tipo cedula" width="1366"/>
+                <img src="266ed2b1878eb76a26d13e78be2fa444c69ab0d2b2eaea38711014df65cb1c82.png" title="Susan enters '1044793847' into Cedula" width="1366"/>
+                <img src="380d1c287f0d212cab45ea27acd82bca68a1c8f2287b85edb147e0092533fd99.png" title="Susan enters 'calle 10' into Direccion" width="1366"/>
+                <img src="6beb195a15746677116a3b4643ada30712831127cdcacc67d42d81ee68f84cb2.png" title="Susan enters 'Medellin' into Ciudad de cobro" width="1366"/>
+                <img src="286feb22bfea455e96e56cb9403fe6ce1a5e0ca3b6c5cec5c85aca95ef12527d.png" title="Susan enters 'dsffdfer@fkdo.co' into Correo" width="1366"/>
+                <img src="99cceb231121b392cff02f3474097d3ebb160de63ba828e9bab2b1545e097f9b.png" title="Susan enters '3119348372' into Celular" width="1366"/>
+                <img src="4447482435a983b950bf51ffd384342bfc4ecb2e8fabac16b406b1c3e2789d9f.png" title="Susan clicks on Boton pagar" width="1366"/>
+                <img src="4447482435a983b950bf51ffd384342bfc4ecb2e8fabac16b406b1c3e2789d9f.png" title="Then she buy the ticket" width="1366"/>
+                <img src="4447482435a983b950bf51ffd384342bfc4ecb2e8fabac16b406b1c3e2789d9f.png" title="Then buy flight results: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.11</span>
+</div>
+</body>
+</html>
